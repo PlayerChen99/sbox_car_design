@@ -1,0 +1,181 @@
+{
+  "RootObject": {
+    "__guid": "5ab4d3f7-b092-4f37-8e46-a2ae52293226",
+    "Flags": 0,
+    "Name": "gearbox",
+    "Tags": "functionpart",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "4a7c78c5-dbe2-4741-a5a0-a6d4541735fa",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "32,32,32",
+        "Static": false
+      },
+      {
+        "__type": "BoxPlacer",
+        "__guid": "ab8bc4bc-1b1f-47a3-b034-bb20af8e8188",
+        "PartCollider": {
+          "_type": "component",
+          "component_id": "4a7c78c5-dbe2-4741-a5a0-a6d4541735fa",
+          "go": "5ab4d3f7-b092-4f37-8e46-a2ae52293226",
+          "component_type": "BoxCollider"
+        }
+      },
+      {
+        "__type": "GearboxPart",
+        "__guid": "1de7430c-68ee-4ce8-afae-776806a97443",
+        "GearRatio": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MaxGear": 6,
+        "Placer": {
+          "_type": "component",
+          "component_id": "ab8bc4bc-1b1f-47a3-b034-bb20af8e8188",
+          "go": "5ab4d3f7-b092-4f37-8e46-a2ae52293226",
+          "component_type": "BoxPlacer"
+        },
+        "Resource": "parts/functionparts/default gearbox/default_gearbox.part",
+        "TransmissionInputs": [
+          {
+            "_type": "component",
+            "component_id": "983c1b59-5d16-4292-9e89-0361bd3367b0",
+            "go": "3449b0d0-8b03-486d-a3b9-2d8b87992e98",
+            "component_type": "InputTorquePort"
+          }
+        ],
+        "TransmissionOutputs": [
+          {
+            "_type": "component",
+            "component_id": "ca561374-71ad-4335-9e82-092474b53f72",
+            "go": "6a74db68-76d4-454e-a2fb-19ff396cb59d",
+            "component_type": "OutputTorquePort"
+          }
+        ]
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "417dd5fb-5d91-4973-b0a0-6eb4aae07f94",
+        "Flags": 0,
+        "Name": "Model",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "34493d97-2be7-4c81-9452-ac9703d3c86f",
+            "Flags": 0,
+            "Name": "Body",
+            "Scale": "0.5,0.5,0.5",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "91357265-801a-47a9-8630-e0f343adf9ba",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "0,0,1,1"
+              }
+            ]
+          },
+          {
+            "__guid": "a47a7ec8-a09d-4b05-a8aa-8c8b79b6c1f1",
+            "Flags": 0,
+            "Name": "Input",
+            "Position": "12,0,0",
+            "Scale": "0.1,0.2,0.2",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "cedf899e-cd9a-4e88-9436-5e4b8f934485",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "0.49767,0.49767,0.49767,1"
+              }
+            ]
+          },
+          {
+            "__guid": "23158175-2448-4395-a963-03a098c412e0",
+            "Flags": 0,
+            "Name": "Output",
+            "Position": "-12,0,0",
+            "Scale": "0.1,0.1,0.1",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "fc4c0119-8a16-405f-8c69-029f5070cd52",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "0.49767,0.49767,0.49767,1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "3449b0d0-8b03-486d-a3b9-2d8b87992e98",
+        "Flags": 0,
+        "Name": "input",
+        "Position": "12,0,0",
+        "Tags": "torqueport",
+        "Enabled": true,
+        "__Prefab": "parts/prefabs/input.prefab",
+        "__PrefabVariables": {
+          "ColliderSize": "5,10,10"
+        }
+      },
+      {
+        "__guid": "6a74db68-76d4-454e-a2fb-19ff396cb59d",
+        "Flags": 0,
+        "Name": "output",
+        "Position": "-12,0,0",
+        "Rotation": "0,0,1,-0.00000004371139",
+        "Tags": "torqueport",
+        "Enabled": true,
+        "__Prefab": "parts/prefabs/output.prefab",
+        "__PrefabVariables": {
+          "ColliderSize": "5,10,10"
+        }
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "IsValid": true,
+  "__version": 1
+}

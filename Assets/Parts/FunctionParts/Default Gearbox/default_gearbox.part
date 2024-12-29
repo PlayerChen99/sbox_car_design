@@ -1,0 +1,16 @@
+{
+  "Name": "Gearbox",
+  "Description": "",
+  "PartType": "Function",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/functionparts/default gearbox/gearbox.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/partmovers/boxmover.prefab"
+  },
+  "__references": [],
+  "__version": 0
+}

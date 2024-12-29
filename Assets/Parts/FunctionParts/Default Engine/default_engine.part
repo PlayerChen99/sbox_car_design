@@ -1,0 +1,16 @@
+{
+  "Name": "Engine",
+  "Description": "",
+  "PartType": "Function",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/functionparts/default engine/engine.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/partmovers/boxmover.prefab"
+  },
+  "__references": [],
+  "__version": 0
+}

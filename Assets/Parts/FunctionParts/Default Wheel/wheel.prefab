@@ -1,0 +1,147 @@
+{
+  "RootObject": {
+    "__guid": "d384ce4e-7c7c-492e-9a96-5f4483b1d8fd",
+    "Flags": 0,
+    "Name": "wheel",
+    "Tags": "functionpart",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "7cbcb5f0-83d2-449f-bbe4-4ee89a27b1a1",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "32,16,32",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "BoxPlacer",
+        "__guid": "84877d09-efb5-4173-92ad-46f5aea25f8e",
+        "PartCollider": {
+          "_type": "component",
+          "component_id": "7cbcb5f0-83d2-449f-bbe4-4ee89a27b1a1",
+          "go": "d384ce4e-7c7c-492e-9a96-5f4483b1d8fd",
+          "component_type": "BoxCollider"
+        }
+      },
+      {
+        "__type": "WheelPart",
+        "__guid": "a3eeb264-03c5-4bcc-8b52-f90ee8c2ff5e",
+        "Placer": {
+          "_type": "component",
+          "component_id": "84877d09-efb5-4173-92ad-46f5aea25f8e",
+          "go": "d384ce4e-7c7c-492e-9a96-5f4483b1d8fd",
+          "component_type": "BoxPlacer"
+        },
+        "Resource": "parts/functionparts/default wheel/default_wheel.part",
+        "SteerAngle": 0,
+        "TransmissionInputs": [
+          {
+            "_type": "component",
+            "component_id": "da45baac-219d-4502-97f4-455915e2bdc0",
+            "go": "443a29b8-568f-470e-ad0c-36d7a6984e3a",
+            "component_type": "InputTorquePort"
+          }
+        ],
+        "TransmissionOutputs": [],
+        "WheelCollider": {
+          "_type": "component",
+          "component_id": "2ecdbd03-8441-4508-95d0-ed0d55ae92dd",
+          "go": "d384ce4e-7c7c-492e-9a96-5f4483b1d8fd",
+          "component_type": "Wheel"
+        }
+      },
+      {
+        "__type": "Wheel",
+        "__guid": "2ecdbd03-8441-4508-95d0-ed0d55ae92dd",
+        "__enabled": false,
+        "ForwardFriction": {
+          "ExtremumSlip": 1,
+          "ExtremumValue": 20000,
+          "AsymptoteSlip": 2,
+          "AsymptoteValue": 10000,
+          "Stiffness": 1
+        },
+        "MaxSuspensionLength": 8,
+        "MinSuspensionLength": 0,
+        "SideFriction": {
+          "ExtremumSlip": 1,
+          "ExtremumValue": 20000,
+          "AsymptoteSlip": 2,
+          "AsymptoteValue": 10000,
+          "Stiffness": 1
+        },
+        "SuspensionDamping": 140,
+        "SuspensionStiffness": 3000,
+        "WheelRadius": 16
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "85580c2d-dbbf-4f2e-a927-3c6270d86508",
+        "Flags": 0,
+        "Name": "Model",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "57ffcae0-ad90-4bde-b4af-ccb79c540c6f",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/citizen_props/wheel01.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "443a29b8-568f-470e-ad0c-36d7a6984e3a",
+        "Flags": 0,
+        "Name": "input",
+        "Tags": "torqueport",
+        "Enabled": true,
+        "__Prefab": "parts/prefabs/input.prefab",
+        "__PrefabVariables": {
+          "ColliderSize": "5,10,10"
+        }
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

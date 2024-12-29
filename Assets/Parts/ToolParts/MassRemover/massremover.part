@@ -1,0 +1,14 @@
+{
+  "Name": "MassRemover",
+  "Description": "",
+  "PartType": "Tool",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/toolparts/massremover/massremover.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": null,
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

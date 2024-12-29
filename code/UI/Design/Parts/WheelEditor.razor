@@ -1,0 +1,24 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+@attribute [StyleSheet]
+
+<root>
+	<label>Steer Angle</label>
+	<TextEntry class="value-input" Value:bind=@wheel.SteerAngle/>
+</root>
+
+@code
+{
+	WheelPart wheel;
+
+	public WheelEditor(WheelPart part)
+	{
+		wheel = part;
+	}
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( 0 );
+}

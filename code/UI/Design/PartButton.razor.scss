@@ -1,0 +1,15 @@
+PartButton {
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 4px;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    &:hover {
+        background-color: gray;
+    }
+}

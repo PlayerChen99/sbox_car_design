@@ -1,0 +1,47 @@
+{
+  "RootObject": {
+    "__guid": "ceef826a-c0c1-4b2e-85f4-10ecfddb2129",
+    "Flags": 0,
+    "Name": "doorsetter",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "DoorSetter",
+        "__guid": "1098c28a-3d5b-49fc-b4a2-774f006ec923",
+        "Resource": "parts/toolparts/doorsetter/doorsetter.part"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

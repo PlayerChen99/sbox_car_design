@@ -1,0 +1,13 @@
+{
+  "Name": "Door",
+  "Description": "",
+  "PartType": "Shape",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/shapeparts/door/door.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": null,
+  "__references": [],
+  "__version": 0
+}

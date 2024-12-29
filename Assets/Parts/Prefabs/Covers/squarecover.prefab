@@ -1,0 +1,78 @@
+{
+  "RootObject": {
+    "__guid": "73fa5115-681f-47c2-ae95-c4d866cebeac",
+    "Flags": 0,
+    "Name": "squarecover",
+    "Tags": "covering",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Covering",
+        "__guid": "d540099e-1b54-4b7d-b7c8-8bb0e2458341",
+        "CoverModel": {
+          "_type": "component",
+          "component_id": "cf4a368c-0212-45e1-b71a-6b3303b0aed9",
+          "go": "73fa5115-681f-47c2-ae95-c4d866cebeac",
+          "component_type": "ModelRenderer"
+        }
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "cf4a368c-0212-45e1-b71a-6b3303b0aed9",
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialOverride": "materials/default/white.vmat",
+        "Model": "models/covers/squarecover.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.PlaneCollider",
+        "__guid": "a2c37ca0-f872-4956-9a7e-bf96ab938bfe",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "16,16",
+        "Static": true,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

@@ -1,0 +1,120 @@
+{
+  "RootObject": {
+    "__guid": "d3b55d8f-25ea-449d-a141-9a2e4d430595",
+    "Flags": 0,
+    "Name": "door",
+    "Tags": "shapepart,shapeignore",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "DoorPart",
+        "__guid": "1ab026d8-266c-4cec-abf6-6f3f523da25c",
+        "DoorCollider": {
+          "_type": "component",
+          "component_id": "0155b613-b5fc-4745-84ae-b14093f397c0",
+          "go": "d3b55d8f-25ea-449d-a141-9a2e4d430595",
+          "component_type": "BoxCollider"
+        },
+        "DoorModel": {
+          "_type": "component",
+          "component_id": "acb2633f-2391-4a96-a451-273b0346ce0b",
+          "go": "4f5b15b7-e744-4ec6-b68b-3152a4e6fc9c",
+          "component_type": "ModelRenderer"
+        },
+        "DoorOutline": {
+          "_type": "component",
+          "component_id": "6c804da1-c360-4d37-b0a0-9f2368f8eb60",
+          "go": "39dbd2cc-4a9e-4650-a390-16e7248c45aa",
+          "component_type": "HighlightOutline"
+        },
+        "DoorRoot": {
+          "_type": "gameobject",
+          "go": "39dbd2cc-4a9e-4650-a390-16e7248c45aa"
+        },
+        "Resource": "parts/shapeparts/door/door.part"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "0155b613-b5fc-4745-84ae-b14093f397c0",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "16,4,4",
+        "Static": false,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "39dbd2cc-4a9e-4650-a390-16e7248c45aa",
+        "Flags": 0,
+        "Name": "Root",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.HighlightOutline",
+            "__guid": "6c804da1-c360-4d37-b0a0-9f2368f8eb60",
+            "Color": "0,0,1,1",
+            "InsideColor": "0,0,0,0",
+            "InsideObscuredColor": "0,0,0,0",
+            "ObscuredColor": "0,0,0,0.4",
+            "Width": 0.25
+          }
+        ]
+      },
+      {
+        "__guid": "4f5b15b7-e744-4ec6-b68b-3152a4e6fc9c",
+        "Flags": 0,
+        "Name": "Model",
+        "Scale": "16,4,4",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "acb2633f-2391-4a96-a451-273b0346ce0b",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/unitcube.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "0.5,1,0,1"
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

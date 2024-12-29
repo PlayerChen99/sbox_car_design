@@ -1,0 +1,135 @@
+{
+  "RootObject": {
+    "__guid": "76edd1e1-1cfe-44c6-b929-4cc0e3bf9a56",
+    "Flags": 0,
+    "Name": "transmissionshaft",
+    "Tags": "functionpart",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "TransmissionShaft",
+        "__guid": "862b78a2-46b4-4502-a059-9015c981533e",
+        "InputBody": {
+          "_type": "gameobject",
+          "go": "18b1e6f1-b154-46b8-a6df-95d7d1f1f9ab"
+        },
+        "OutputBody": {
+          "_type": "gameobject",
+          "go": "c4376941-c11b-4bd9-a311-8bcf69b42989"
+        },
+        "ShaftBody": {
+          "_type": "gameobject",
+          "go": "40b071ca-5a87-4758-bdcd-5a609c3c608d"
+        },
+        "Resource": "parts/functionparts/default transmissionshaft/default_transmissionshaft.part"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "b0aeacf9-6560-41a7-a21e-0909f50928ff",
+        "Flags": 0,
+        "Name": "Model",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "40b071ca-5a87-4758-bdcd-5a609c3c608d",
+            "Flags": 0,
+            "Name": "Body",
+            "Scale": "64,1,1",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.BoxCollider",
+                "__guid": "38068b83-6609-4b2e-8928-3b6353cb6221",
+                "Center": "0,0,0",
+                "IsTrigger": false,
+                "Scale": "1,5,5",
+                "Static": false
+              }
+            ],
+            "Children": [
+              {
+                "__guid": "f6c4e2b2-9f56-4f33-93a1-af067b907235",
+                "Flags": 0,
+                "Name": "Object",
+                "Scale": "0.01992187,0.1,0.1",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.ModelRenderer",
+                    "__guid": "55f23442-ddfe-419c-b63c-c41174160ae2",
+                    "BodyGroups": 18446744073709551615,
+                    "Model": "models/dev/box.vmdl",
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Tint": "1,1,1,1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "18b1e6f1-b154-46b8-a6df-95d7d1f1f9ab",
+            "Flags": 0,
+            "Name": "Input",
+            "Position": "-32,0,0",
+            "Scale": "0.2,0.2,0.2",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "5dd6b7e1-271d-44a6-893c-36f78bd0eaf5",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "__guid": "c4376941-c11b-4bd9-a311-8bcf69b42989",
+            "Flags": 0,
+            "Name": "Output",
+            "Position": "32,0,0",
+            "Scale": "0.2,0.2,0.2",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "09f64c0c-d106-4bed-80c9-bfa44680c81e",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

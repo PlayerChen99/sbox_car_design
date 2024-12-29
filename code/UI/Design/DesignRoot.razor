@@ -1,0 +1,57 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+
+<root>
+	<div class="left part-browser">
+		<PartBrowser />
+	</div>
+	<div @ref="EditorPanel" class="right editor-panel">
+	</div>
+	<div class="right button-panel part-operate">
+		<button onclick="@PartSelectMode">Part Select Mode</button>
+		<button onclick="@PartDeleteMode">Part Delete Mode</button>
+	</div>
+	<button class="drive-mode" onclick="@DesignController.Instance.SwitchDriveMode">
+		Ignite
+	</button>
+</root>
+
+@code
+{
+	public static DesignRoot Instance;
+
+	Panel EditorPanel;
+
+	public DesignRoot()
+	{
+		Instance = this;
+	}
+
+	void PartSelectMode()
+	{
+		DesignController.Instance.ClearPlacingPart();
+		DesignController.Instance.ClearSelectPart();
+	}
+
+	void PartDeleteMode()
+	{
+		DesignController.Instance.RemoveSelectedPart();
+	}
+
+	public void SetPartEditor(Panel panel)
+	{
+		EditorPanel.DeleteChildren();
+		if (panel is not null)
+		{
+			EditorPanel.AddChild(panel);
+			panel.AddClass("part-editor");
+		}
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(0);
+}

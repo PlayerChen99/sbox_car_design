@@ -1,0 +1,13 @@
+{
+  "Name": "TransmissionShaft",
+  "Description": "",
+  "PartType": "Function",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/functionparts/default transmissionshaft/transmissionshaft.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": null,
+  "__references": [],
+  "__version": 0
+}

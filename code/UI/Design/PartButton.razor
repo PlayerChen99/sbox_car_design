@@ -1,0 +1,23 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+@attribute [StyleSheet]
+
+<root onclick="@AddPart">
+	@Part.Name
+</root>
+
+@code
+{
+	void AddPart()
+	{
+		DesignController.Instance.AddPlacingPart(Part.PartPrefab.Clone().Components.Get<PartFunction>());
+	}
+
+	public PartResource Part { get; set; }
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(0);
+}

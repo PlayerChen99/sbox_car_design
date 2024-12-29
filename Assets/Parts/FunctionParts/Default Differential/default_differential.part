@@ -1,0 +1,16 @@
+{
+  "Name": "Differential",
+  "Description": "",
+  "PartType": "Function",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/functionparts/default differential/differential.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/partmovers/boxmover.prefab"
+  },
+  "__references": [],
+  "__version": 0
+}

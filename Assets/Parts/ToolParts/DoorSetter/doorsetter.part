@@ -1,0 +1,13 @@
+{
+  "Name": "DoorSetter",
+  "Description": "",
+  "PartType": "Tool",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/toolparts/doorsetter/doorsetter.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": null,
+  "__references": [],
+  "__version": 0
+}

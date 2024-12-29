@@ -1,0 +1,42 @@
+{
+  "RootObject": {
+    "__guid": "ea2b9dbd-352d-4a40-b391-97af1b6ce64c",
+    "Flags": 0,
+    "Name": "output",
+    "Tags": "torqueport",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "e413b692-86e3-47e4-bd13-82ab0ed7661b",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "5,10,10",
+        "Static": false
+      },
+      {
+        "__type": "OutputTorquePort",
+        "__guid": "b7f04771-3a95-41c9-af0d-a9da1e250a33"
+      }
+    ],
+    "Children": [],
+    "__variables": [
+      {
+        "Id": "ColliderSize",
+        "Title": "ColliderSize",
+        "Targets": [
+          {
+            "Id": "e413b692-86e3-47e4-bd13-82ab0ed7661b",
+            "Property": "Scale"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

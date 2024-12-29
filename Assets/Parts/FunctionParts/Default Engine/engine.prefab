@@ -1,0 +1,128 @@
+{
+  "RootObject": {
+    "__guid": "d61e20fd-164b-41f3-a346-d2b2408ce8cb",
+    "Flags": 0,
+    "Name": "engine",
+    "Tags": "functionpart",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "cf610036-b64e-4ce4-bf99-409e58edbcf8",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "64,32,32",
+        "Static": false
+      },
+      {
+        "__type": "BoxPlacer",
+        "__guid": "15f31897-7d6e-44e8-a8da-58235b911412",
+        "PartCollider": {
+          "_type": "component",
+          "component_id": "cf610036-b64e-4ce4-bf99-409e58edbcf8",
+          "go": "d61e20fd-164b-41f3-a346-d2b2408ce8cb",
+          "component_type": "BoxCollider"
+        }
+      },
+      {
+        "__type": "EnginePart",
+        "__guid": "a17ab85f-b64a-474f-98d2-5e0d7ba989e2",
+        "Placer": {
+          "_type": "component",
+          "component_id": "15f31897-7d6e-44e8-a8da-58235b911412",
+          "go": "d61e20fd-164b-41f3-a346-d2b2408ce8cb",
+          "component_type": "BoxPlacer"
+        },
+        "Resource": "parts/functionparts/default engine/default_engine.part",
+        "TransmissionInputs": [],
+        "TransmissionOutputs": [
+          {
+            "_type": "component",
+            "component_id": "92e3623e-722e-4727-a58b-ef6ad1352583",
+            "go": "7ddab9a1-04e8-4c0f-ab35-81d172c98318",
+            "component_type": "OutputTorquePort"
+          }
+        ]
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "0b2073b0-1cc2-4903-8046-f2df68f7a4e1",
+        "Flags": 0,
+        "Name": "Model",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "fb21de80-b1aa-4244-9b7a-bab279c4b1eb",
+            "Flags": 0,
+            "Name": "Body",
+            "Scale": "1,0.5,0.5",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "6e5a37d1-82d0-4a87-869d-6e983d92a5dc",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,0,0,1"
+              }
+            ]
+          },
+          {
+            "__guid": "1aac2d6b-e2be-499b-b54d-7fe13e97d2fc",
+            "Flags": 0,
+            "Name": "Output",
+            "Position": "-25,0,0",
+            "Scale": "0.1,0.2,0.2",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "e03b1a6c-c153-4f9a-a5bd-8b1e2f9b062f",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "0.49767,0.49767,0.49767,1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "7ddab9a1-04e8-4c0f-ab35-81d172c98318",
+        "Flags": 0,
+        "Name": "output",
+        "Position": "-25,0,0",
+        "Rotation": "0,0,1,-0.00000004371139",
+        "Tags": "torqueport",
+        "Enabled": true,
+        "__Prefab": "parts/prefabs/output.prefab",
+        "__PrefabVariables": {
+          "ColliderSize": "5,10,10"
+        }
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "IsValid": true,
+  "__version": 1
+}

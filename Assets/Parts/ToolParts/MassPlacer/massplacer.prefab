@@ -1,0 +1,65 @@
+{
+  "RootObject": {
+    "__guid": "e1818f2a-b247-46e9-8c10-134b55f5db0d",
+    "Flags": 0,
+    "Name": "massplacer",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "MassCubePlacer",
+        "__guid": "48d49f5b-022d-4255-aaaa-d9d841835873",
+        "CoverCubePrefab": {
+          "_type": "gameobject",
+          "prefab": "parts/shapeparts/squarecovercube/squarecovercube.prefab"
+        },
+        "Resource": "parts/toolparts/massplacer/massplacer.part"
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "6785c53c-d8cc-4dd5-b0e2-4effd23dfbcc",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/gridcube.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "Name": "Cube",
+  "Description": "",
+  "PartType": "Shape",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/shapeparts/squarecovercube/squarecovercube.prefab"
+  },
+  "RepeatPlace": true,
+  "MoverPrefab": null,
+  "__references": [],
+  "IsValid": true,
+  "__version": 0
+}

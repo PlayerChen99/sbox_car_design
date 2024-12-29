@@ -1,0 +1,299 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "c52401cb-cd9a-4f3b-bc68-f5bd5be65b52",
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "4b571594-727a-4c8e-873e-d5f55f843135",
+          "Changes": "",
+          "Description": "",
+          "SceneTags": "",
+          "Title": "minimal"
+        }
+      ]
+    },
+    {
+      "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.94419,0.97767,1,1",
+          "Shadows": true,
+          "SkyColor": "0.2532,0.32006,0.35349,1"
+        }
+      ]
+    },
+    {
+      "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "f3e304db-baab-4c1a-a4ec-8442585c2d62",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "MultiBounce": false,
+          "Projection": "Sphere",
+          "RenderDynamically": false,
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ]
+    },
+    {
+      "__guid": "6ad70641-3c6c-4402-9c85-9a4969af4764",
+      "Flags": 0,
+      "Name": "DesignPlane",
+      "Position": "0,0,-32",
+      "Scale": "5,5,5",
+      "Tags": "designplane",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0b6a18bf-fdb8-4661-970e-ef635bfa9baa",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialOverride": "materials/default.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "0.39546,0.51163,0.27128,1"
+        },
+        {
+          "__type": "Sandbox.PlaneCollider",
+          "__guid": "0304aefb-3b79-4951-8657-980f034eabbc",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "100,100",
+          "Static": true,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "a118672e-6fe0-48ca-8c8d-eb051e2d4d83",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "-173.8936,109.7641,-133.2991",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "4650e4c2-f4c2-4c50-88cd-e25a9306b3a6",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "DesignPanel",
+          "__guid": "d90e0d0d-82e7-42ab-8d6a-f9e1f89b71e1"
+        }
+      ]
+    },
+    {
+      "__guid": "dd6df090-0ab3-426c-884e-29dbbac7a27a",
+      "Flags": 0,
+      "Name": "DesignCamera",
+      "Position": "47.99155,-24.21361,40.57944",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "090081bf-a3b2-4e3d-b19d-63de8a869d42",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "shapepart",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "DesignCameraController",
+          "__guid": "1a809d7b-c34c-423d-8017-070a792aa5a8",
+          "MaxDistance": 1000,
+          "MinDistance": 200,
+          "Sensitivity": 0.4,
+          "ZoomSpeed": 100
+        },
+        {
+          "__type": "Sandbox.Highlight",
+          "__guid": "3deceb32-258f-44b7-92ff-9b971f0124e6"
+        }
+      ]
+    },
+    {
+      "__guid": "ed73e18e-322c-4d88-88ea-488b3018016f",
+      "Flags": 0,
+      "Name": "DesignController",
+      "Position": "47.99155,-24.21361,40.57944",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DesignController",
+          "__guid": "cc4dcc52-5198-459b-95a5-8e1966fd9a93",
+          "CameraController": {
+            "_type": "component",
+            "component_id": "1a809d7b-c34c-423d-8017-070a792aa5a8",
+            "go": "dd6df090-0ab3-426c-884e-29dbbac7a27a",
+            "component_type": "DesignCameraController"
+          },
+          "DesigningCar": {
+            "_type": "component",
+            "component_id": "f8fd8e87-47b9-41b2-8fd3-3773f0578231",
+            "go": "1ecdc7e9-49f7-4ac3-ac7f-883c397e049d",
+            "component_type": "CarController"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "1ecdc7e9-49f7-4ac3-ac7f-883c397e049d",
+      "Flags": 0,
+      "Name": "Car",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CarController",
+          "__guid": "f8fd8e87-47b9-41b2-8fd3-3773f0578231",
+          "__enabled": false
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "9d14f4ec-58bb-4944-95ff-b07c774675b0",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "97894ed3-127e-4151-b485-9c0db63ef1a3",
+          "Flags": 0,
+          "Name": "Camera",
+          "Position": "-400,0,0",
+          "Tags": "maincamera",
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "88500a12-27c4-4a47-9f0c-808c7cab4949",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            },
+            {
+              "__type": "CarCameraController",
+              "__guid": "76f8c830-1239-4dd8-ac56-9fc7b522b146",
+              "MaxDistance": 1000,
+              "MinDistance": 200,
+              "Sensitivity": 0.4,
+              "ZoomSpeed": 100
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": "minimal",
+  "Description": null,
+  "__references": [],
+  "__version": 2
+}

@@ -1,0 +1,22 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+@attribute [StyleSheet]
+
+<root>
+	@Name
+	<button>Save</button>
+	<button>Delete</button>
+</root>
+
+@code
+{
+
+	public string Name;
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(0);
+}

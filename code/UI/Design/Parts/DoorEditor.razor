@@ -1,0 +1,36 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+@attribute [StyleSheet]
+
+<root>
+	<label>Door Group</label>
+	<TextEntry class="value-input" Value:bind=@door.group />
+	<label>Door Angle</label>
+	<TextEntry class="value-input" Value:bind=@door.angle />
+	<button class="button" onclick="@CreaterSetter">Edit Door</button>
+</root>
+
+@code
+{
+	DoorPart door;
+
+	public DoorEditor(DoorPart part)
+	{
+		door = part;
+	}
+
+	void CreaterSetter()
+	{
+		door.DoorOutline.Enabled = true;
+		DoorSetter setter = PartResource.PartDictionary["DoorSetter"].PartPrefab.Clone().Components.Get<DoorSetter>();
+		setter.door = door;
+		DesignController.Instance.AddPlacingPart(setter);
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(0);
+}

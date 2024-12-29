@@ -1,0 +1,50 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits Panel
+
+@attribute [StyleSheet]
+
+<root>
+	<div class="mode-select">
+		<button class="design-mode" onclick="@SwitchFunctionMode">Function</button>
+		<button class="design-mode" onclick="@SwitchShapeMode">Shape</button>
+	</div>
+	<div class="part-list">
+		@{
+			if (DesignController.Instance.DesignMode == DesignController.ModeOfDesign.Function)
+			{
+				foreach (var part in PartResource.All.Where((a) => a.PartType == PartResource.TypeOfPart.Function))
+				{
+					<PartButton Part="@part" />
+				}
+			}
+			else
+			{
+				foreach (var part in PartResource.All.Where((a) => a.PartType == PartResource.TypeOfPart.Shape))
+				{
+					<PartButton Part="@part" />
+				}
+
+				<PartButton Part="@PartResource.PartDictionary["MassPlacer"]" />
+				<PartButton Part="@PartResource.PartDictionary["MassRemover"]" />
+			}
+		}
+	</div>
+</root>
+
+@code
+{
+	void SwitchFunctionMode()
+	{
+		DesignController.Instance.SwitchDesignMode(DesignController.ModeOfDesign.Function);
+	}
+	void SwitchShapeMode()
+	{
+		DesignController.Instance.SwitchDesignMode(DesignController.ModeOfDesign.Shape);
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(0);
+}

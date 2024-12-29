@@ -1,0 +1,13 @@
+{
+  "Name": "MassPlacer",
+  "Description": "",
+  "PartType": "Tool",
+  "PartPrefab": {
+    "_type": "gameobject",
+    "prefab": "parts/toolparts/massplacer/massplacer.prefab"
+  },
+  "RepeatPlace": false,
+  "MoverPrefab": null,
+  "__references": [],
+  "__version": 0
+}

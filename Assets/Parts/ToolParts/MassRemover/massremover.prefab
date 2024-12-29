@@ -1,0 +1,62 @@
+{
+  "RootObject": {
+    "__guid": "1fe52cb0-b424-4214-a082-f22c9a652e6b",
+    "Flags": 0,
+    "Name": "massremover",
+    "Scale": "1.1,1.1,1.1",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "MassCubeRemover",
+        "__guid": "b68a02b1-1b27-4d6b-a527-c548633592ce",
+        "Resource": "parts/toolparts/massremover/massremover.part"
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "52056d5c-71ae-4069-8d2a-2d9df49e7731",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/gridcube.vmdl",
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,0,0,1"
+      }
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
